@@ -98,16 +98,6 @@ namespace Math_Quiz___Jesus_Arredondo
             this.Text += " " + todayDate;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TimeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void startButton_Click(object sender, EventArgs e)
         {
             StartQuiz();
