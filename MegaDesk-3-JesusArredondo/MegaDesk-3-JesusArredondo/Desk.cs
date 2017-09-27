@@ -11,7 +11,13 @@ namespace MegaDesk_3_JesusArredondo
         private float width;
         private float deph;
         private int drawers;
-        private enum Materials { }
+        private enum Materials {
+            Oak = 200,
+            Laminate = 100,
+            Pine = 50,
+            Rossewood = 300,
+            Veneer = 150;
+        }
 
         public float getWidth() {
             return this.width;
