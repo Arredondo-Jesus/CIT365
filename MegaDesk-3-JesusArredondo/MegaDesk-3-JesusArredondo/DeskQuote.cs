@@ -148,19 +148,21 @@ namespace MegaDesk_3_JesusArredondo
                     streamReader.Close();
                 }
 
+            }
+            catch (IOException e)
+            {
+                if (e.Source != null)
+                {
+                    System.Windows.Forms.MessageBox.Show("An error has occur while trying to open the file");
+                }
+            }
+            finally {
                 StreamWriter streamWriter = new StreamWriter("Quotes.txt", append: true);
                 string content = name + "," + date + "," + rushDays + "," + width + "," + depth + "," + drawwers + ","
                     + price;
                 streamWriter.WriteLine(content);
                 streamWriter.Close();
-
             }
-            catch (IOException e) {
-                if (e.Source != null) {
-                    System.Windows.Forms.MessageBox.Show("An error has occur while trying to open the file");
-                }
-            }
-
         }
     }
 }
