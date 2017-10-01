@@ -10,16 +10,46 @@ using System.Windows.Forms;
 
 namespace MegaDesk_3_JesusArredondo
 {
-    public partial class MainMenu : Form
+    public partial class MainMenuForm : Form
     {
-        public MainMenu()
+        MainMenuForm mainMenuForm;
+        SearchAllQuotes searchAllQuotes;
+        AddQuote addQuote;
+        ViewAllQuotes viewAllQuotes;
+
+        public MainMenuForm()
         {
             InitializeComponent();
+            addQuote = new AddQuote(this);
+            searchAllQuotes = new SearchAllQuotes(this);
+            viewAllQuotes = new ViewAllQuotes(this);
+            this.mainMenuForm = this;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SearchQuotesButton_Click(object sender, EventArgs e)
+        {
+            searchAllQuotes.Show();
+            this.Hide();
+        }
+
+        private void AddQuotesButton_Click(object sender, EventArgs e)
+        {
+            
+            addQuote.Show();
+            this.Hide();
+        }
+
+        private void ViewQuotesButton_Click(object sender, EventArgs e)
+        {
+ 
+            viewAllQuotes.Show();
+            this.Hide();
         }
     }
 }

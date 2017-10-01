@@ -16,5 +16,12 @@ namespace MegaDesk_3_JesusArredondo
         {
             InitializeComponent();
         }
+
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        {
+            MainMenuForm mainMenuForm = new MainMenuForm();
+            mainMenuForm.Show();
+            this.Close();
+        }
     }
 }

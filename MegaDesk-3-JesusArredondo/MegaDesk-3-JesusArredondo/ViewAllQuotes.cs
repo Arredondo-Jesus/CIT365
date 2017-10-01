@@ -12,9 +12,19 @@ namespace MegaDesk_3_JesusArredondo
 {
     public partial class ViewAllQuotes : Form
     {
-        public ViewAllQuotes()
+        MainMenuForm mainMenu;
+
+        public ViewAllQuotes(MainMenuForm mainMenuForm)
         {
             InitializeComponent();
+            mainMenu = mainMenuForm;
+        }
+
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        {
+            mainMenu.Show();
+            this.Hide();
         }
     }
 }
+ 

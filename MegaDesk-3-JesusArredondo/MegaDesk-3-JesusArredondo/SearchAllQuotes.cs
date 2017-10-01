@@ -12,9 +12,23 @@ namespace MegaDesk_3_JesusArredondo
 {
     public partial class SearchAllQuotes : Form
     {
-        public SearchAllQuotes()
+        MainMenuForm mainMenu;
+
+        public SearchAllQuotes(MainMenuForm mainMenuForm)
         {
             InitializeComponent();
+            mainMenu = mainMenuForm;
+        }
+
+        private void SearchAllQutotesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        {
+            mainMenu.Show();
+            this.Hide();
         }
     }
 }
