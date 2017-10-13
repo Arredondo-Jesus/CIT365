@@ -8,10 +8,10 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ResultForm" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="283,277,0,0" TextWrapping="Wrap" Text="Length of Wood" VerticalAlignment="Top" Height="20" Width="144"/>
-        <TextBlock x:Name="resultWoodLength" HorizontalAlignment="Left" Margin="459,277,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="283,325,0,0" TextWrapping="Wrap" Text="Glass Area" VerticalAlignment="Top" Height="20" Width="144"/>
-        <TextBlock x:Name="resultWoodLength_Copy" HorizontalAlignment="Left" Margin="459,325,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="283,363,0,0" TextWrapping="Wrap" Text="Length of Wood" VerticalAlignment="Top" Height="20" Width="144"/>
+        <TextBlock x:Name="resultWoodLength" HorizontalAlignment="Left" Margin="459,363,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="283,411,0,0" TextWrapping="Wrap" Text="Glass Area" VerticalAlignment="Top" Height="20" Width="144"/>
+        <TextBlock x:Name="resultWoodLength_Copy" HorizontalAlignment="Left" Margin="459,411,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

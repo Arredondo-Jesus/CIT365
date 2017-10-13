@@ -8,16 +8,19 @@
     mc:Ignorable="d">
 
     <Grid x:Name="calculator" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="197,290,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" Height="30" Width="51" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="197,386,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" Height="30" Width="73" FontSize="18"/>
-        <Button Content="Calculate" HorizontalAlignment="Left" Margin="197,453,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="widthField" HorizontalAlignment="Left" Margin="415,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="232" TextChanged="TextBox_TextChanged"/>
-        <TextBlock HorizontalAlignment="Left" Height="2" Margin="499,320,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5">
+        <TextBlock HorizontalAlignment="Left" Margin="257,166,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" Height="30" Width="51" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="257,262,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" Height="30" Width="73" FontSize="18"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="248,442,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Width" HorizontalAlignment="Left" Margin="475,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="232"/>
+        <TextBlock HorizontalAlignment="Left" Height="2" Margin="559,196,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <TextBlock.RenderTransform>
                 <CompositeTransform Rotation="-136.906"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBox x:Name="heightField" HorizontalAlignment="Left" Margin="415,384,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="232" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="Height" HorizontalAlignment="Left" Margin="475,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="232"/>
+        <TextBlock HorizontalAlignment="Left" Margin="257,362,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Height="30" Width="73" FontSize="18"/>
+        <Slider x:Name="Quantity" HorizontalAlignment="Left" Margin="475,348,0,0" VerticalAlignment="Top" Width="232"/>
+        <TextBlock HorizontalAlignment="Left" Margin="475,80,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" Height="30" Width="232" FontSize="18"/>
 
     </Grid>
 </Page>

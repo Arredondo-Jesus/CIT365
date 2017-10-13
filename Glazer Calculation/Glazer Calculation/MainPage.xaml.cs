@@ -29,16 +29,11 @@ namespace Glazer_Calculation
         }
 
         public int getWidth() {
-            return Convert.ToInt32(this.widthField.Text);
+            return Convert.ToInt32(this.Width.Text);
         }
 
         public int getHeight() {
-            return Convert.ToInt32(this.heightField.Text);
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
+            return Convert.ToInt32(this.Height.Text);
         }
     }
 }
