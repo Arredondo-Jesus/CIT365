@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Glazer_Calculation
 {
-    class GlazerCal
+    class GlazerCalculator
     {
         public int width { set; get; }
         public int height { set; get; }
         public double woodLegth { set; get; }
         public double glassArea { set; get; }
+        public int quantity { set; get; }
+        public string color { set; get; }
 
         public double calcWoodLength(MainPage mainPage) {
             int width = this.width = mainPage.getWidth();
@@ -27,10 +29,9 @@ namespace Glazer_Calculation
             int width = this.width = mainPage.getWidth();
             int height = this.height = mainPage.getHeight();
 
-            double glassAarea = 2 * (width * height) * 3.25;
+            double glassAarea = 2 * (width * height);
 
             return glassAarea;
         }
     }
-    
 }

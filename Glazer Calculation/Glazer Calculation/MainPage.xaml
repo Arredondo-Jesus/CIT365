@@ -8,19 +8,29 @@
     mc:Ignorable="d">
 
     <Grid x:Name="calculator" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="257,166,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" Height="30" Width="51" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="257,262,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" Height="30" Width="73" FontSize="18"/>
-        <Button Content="Calculate" HorizontalAlignment="Left" Margin="248,442,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Width" HorizontalAlignment="Left" Margin="475,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="232"/>
-        <TextBlock HorizontalAlignment="Left" Height="2" Margin="559,196,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <TextBlock HorizontalAlignment="Left" Margin="164,253,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" Height="18" Width="51" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="164,161,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" Height="30" Width="73" FontSize="18"/>
+        <Button x:Name="calculateButton" Content="Calculate" HorizontalAlignment="Left" Margin="155,509,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="Length" HorizontalAlignment="Left" Margin="425,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="19" Width="232" KeyDown="Width_KeyDown" TextChanged="Length_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Height="1.18" Margin="509.2,255.413,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <TextBlock.RenderTransform>
-                <CompositeTransform Rotation="-136.906"/>
+                <CompositeTransform Rotation="-122.231" SkewY="-28.875" ScaleY="1.369" ScaleX="0.73"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBox x:Name="Height" HorizontalAlignment="Left" Margin="475,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="232"/>
-        <TextBlock HorizontalAlignment="Left" Margin="257,362,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Height="30" Width="73" FontSize="18"/>
-        <Slider x:Name="Quantity" HorizontalAlignment="Left" Margin="475,348,0,0" VerticalAlignment="Top" Width="232"/>
-        <TextBlock HorizontalAlignment="Left" Margin="475,80,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" Height="30" Width="232" FontSize="18"/>
+        <TextBox x:Name="Height" HorizontalAlignment="Left" Margin="425,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="232" KeyDown="Height_KeyDown" TextChanged="Height_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="164,342,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Height="30" Width="73" FontSize="18"/>
+        <Slider x:Name="Quantity" HorizontalAlignment="Left" Margin="425,328,0,0" VerticalAlignment="Top" Width="232" Value="1" Minimum="1" Maximum="20" />
+        <TextBlock HorizontalAlignment="Left" Margin="164,416,0,0" TextWrapping="Wrap" Text="Color" VerticalAlignment="Top" Height="30" Width="73" FontSize="18" RenderTransformOrigin="0.756,-0.88"/>
+        <ComboBox x:Name="Color" HorizontalAlignment="Left" Margin="425,414,0,0" VerticalAlignment="Top" Width="232" SelectedIndex="1">
+            <ComboBoxItem FontSize="20" Content="Red"/>
+            <ComboBoxItem FontSize="20" Content="Blue"/>
+            <ComboBoxItem FontSize="20" Content="Brown"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="382,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="166" FontSize="18">
+            <Run Text="Glazer Calculator"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
 
     </Grid>
 </Page>
